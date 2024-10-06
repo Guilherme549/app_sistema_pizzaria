@@ -1,0 +1,99 @@
+/* Estilos gerais */
+body {
+    background-color: #f4f6f9;
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    max-width: 700px;
+    margin: auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #343a40;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+/* Estilos para o cartão de detalhes do usuário */
+#usuarioDetalhes {
+    background-color: #ffffff;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 20px;
+}
+
+#usuarioDetalhes .card-title {
+    font-size: 1.75rem;
+    color: #007bff;
+    font-weight: 600;
+}
+
+#usuarioDetalhes .card-text {
+    font-size: 1.1rem;
+    color: #6c757d;
+    margin-bottom: 10px;
+}
+
+/* Botões */
+#voltarBtn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #007bff;
+    border-color: #007bff;
+    border-radius: 5px;
+}
+
+#loginBtn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #28a745;
+    border-color: #28a745;
+    border-radius: 5px;
+}
+
+#voltarBtn:hover, #loginBtn:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+/* Mensagem de erro */
+#mensagemErro {
+    font-size: 1.2rem;
+    color: #dc3545;
+    margin-top: 10px;
+    padding: 15px;
+    border: 1px solid #dc3545;
+    border-radius: 5px;
+    background-color: #f8d7da;
+    display: none;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    #usuarioDetalhes .card-title {
+        font-size: 1.5rem;
+    }
+
+    #usuarioDetalhes .card-text {
+        font-size: 1rem;
+    }
+
+    #voltarBtn, #loginBtn {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+}
